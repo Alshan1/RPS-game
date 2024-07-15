@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./23387733.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.screen {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#start-screen {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+#start-screen h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#start-screen button {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff8c00;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+#start-screen button:hover {
+    background-color: #ffaf40;
+}
+
+#game-screen {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.choice {
+    cursor: pointer;
+}
+
+.choice img {
+    width: 100px;
+    height: 100px;
+}
+
+#result {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#result-text {
+    font-size: 36px;
+    color: black; /* Adjust text color */
+    margin-bottom: 20px;
+}
+
+#refresh-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff8c00; /* Orange background color */
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+#refresh-button:hover {
+    background-color: #ffaf40; /* Lighter shade of orange on hover */
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.2); /* Light background color */
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.score {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    background-color: rgba(255, 165, 0, 0.8); /* Orange background */
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.moves {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    background-color: rgba(0, 128, 0, 0.8); /* Green background */
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.score h2, .moves h2 {
+    font-size: 24px; /* Increase font size */
+    margin-bottom: 5px; /* Space below the heading */
+}
+
+.score span, .moves span {
+    display: block;
+    font-size: 36px; /* Larger font size for the scores */
+    font-weight: bold;
+    color: white; /* White text color */
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen" class="screen">
+        <h1>RPS Game</h1>
+        <button id="start-button">START</button>
+    </div>
+
+    <div id="game-screen" class="screen hidden">
+        <h1 style="color: black;">Rock Paper Scissors</h1>
+        <div class="scoreboard">
+            <div class="score">
+                <h2>User</h2>
+                <span id="user-score">0</span>
+            </div>
+            <div class="score">
+                <h2>AI</h2>
+                <span id="ai-score">0</span>
+            </div>
+            <div class="moves">
+                <h2>Moves Left</h2>
+                <span id="moves-left">10</span>
+            </div>
+        </div>
+        <div class="choices">
+            <div class="choice" onclick="play('rock')">
+                <img src="https://images.vexels.com/content/145665/preview/flat-stone-01f6e9.png" alt="Rock">
+            </div>
+            <div class="choice" onclick="play('paper')">
+                <img src="https://images.vexels.com/content/256349/preview/winking-piece-of-paper-cartoon-9b8f67.png" alt="Paper">
+            </div>
+            <div class="choice" onclick="play('scissors')">
+                <img src="https://static.vecteezy.com/system/resources/previews/023/985/123/original/school-materials-clip-art-cartoon-scissors-free-png.png" alt="Scissors">
+            </div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
